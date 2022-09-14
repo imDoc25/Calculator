@@ -1,0 +1,85 @@
+/* Remove margin and padding */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Setting background image */
+body{
+    background-image: url(vintage-bg.jpg);
+    background-size: cover;
+    
+}
+/* Design title */
+#calcLabel{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding-top: 40px;
+    font-weight: normal;
+    color: #CC6B49;
+}
+#calcLabel2{
+    font-family: 'Goudy Old Style', 'Arial Narrow', Arial, sans-serif, Helvetica, sans-serif;
+    font-size: 45px;
+    text-align: center;
+    color: #6F5643;
+}
+
+/* Positioning buttons and display using grid */
+.mainContent{
+    border: 1px solid black;
+    width: 350px;
+    margin: 80px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: linear-gradient(180deg, #6F5643, #D2A24C);
+}
+
+.mainContent > button, .mainContent > .display{
+    font-family: 'Goudy Old Style', 'Arial Narrow', Arial, sans-serif, Helvetica, sans-serif;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+.mainContent > button:active{
+    background-color: #D2A24C;
+}
+
+.display{
+    grid-column: 1/5;
+    height: 55px;
+    background-color: antiquewhite;
+}
+#display2{
+    text-align: right;
+    font-size: xx-large;
+}
+#display1{
+    text-align: right;
+    color: gray;
+}
+
+#equals{
+    grid-column: 4;
+    grid-row: 5/7;
+}
+
+/* Design footer */
+footer{
+    font-family: 'Goudy Old Style', 'Arial Narrow', Arial, sans-serif, Helvetica, sans-serif;
+    width: 100%;
+    margin-top: 50px;
+    font-size: 18px;
+}
+
+#foot{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
